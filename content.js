@@ -108,7 +108,7 @@ function callback(mutations, observer) {
     tweets.forEach((tweet) => {
         // if any of the tweets match the keywords then blur the tweets
         if (Array.from(keywords).some(word => tweet.innerText.toLowerCase().includes(word.toLowerCase()))) {
-            tweet.style.filter = `blur(4px)`
+            tweet.style.filter = `blur(20px)`
             tweet.style.pointerEvents = "none"
         }
     })
